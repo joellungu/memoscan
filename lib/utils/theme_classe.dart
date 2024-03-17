@@ -9,9 +9,12 @@ class ThemeClass {
 
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
+    popupMenuTheme: PopupMenuThemeData(
+      color: Colors.white,
+    ),
     chipTheme: ChipThemeData(
       selectedColor: Colors.teal.shade100.withOpacity(0.3),
-      labelStyle: TextStyle(
+      labelStyle: const TextStyle(
         color: Colors.black,
       ),
     ),
@@ -28,6 +31,10 @@ class ThemeClass {
 
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
+    cardColor: Colors.white,
+    cardTheme: CardTheme(
+      color: Colors.white,
+    ),
     chipTheme: ChipThemeData(
       selectedColor: Colors.teal.shade100.withOpacity(0.3),
       labelStyle: const TextStyle(
